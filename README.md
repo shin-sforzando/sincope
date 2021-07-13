@@ -1,8 +1,8 @@
-# broad-boilerplate
+# sincope
 
 <!-- Badges -->
-[![broad-boilerplate](https://github.com/shin-sforzando/broad-boilerplate/actions/workflows/broad-boilerplate.yml/badge.svg)](https://github.com/shin-sforzando/broad-boilerplate/actions/workflows/broad-boilerplate.yml)
-[![Bump Version](https://github.com/shin-sforzando/broad-boilerplate/actions/workflows/bump-version.yml/badge.svg)](https://github.com/shin-sforzando/broad-boilerplate/actions/workflows/bump-version.yml)
+[![sincope](https://github.com/shin-sforzando/sincope/actions/workflows/sincope.yml/badge.svg)](https://github.com/shin-sforzando/sincope/actions/workflows/sincope.yml)
+[![Bump Version](https://github.com/shin-sforzando/sincope/actions/workflows/bump-version.yml/badge.svg)](https://github.com/shin-sforzando/sincope/actions/workflows/bump-version.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -12,7 +12,7 @@
 |Screenshot 1|Screenshot 2|
 
 <!-- Synopsis -->
-**broad-boilerplate** is GitHub Template Repository for General Use.
+**sincope** is CLI tool to sync music files to external media written in Rust.
 
 <!-- TOC -->
 - [Prerequisites](#prerequisites)
@@ -41,22 +41,14 @@
 
 ```shell
 $ make help
-ps                   監視
-up                   起動
-setup                初回
-restart              再起
-renew                転生
-shell                接続
-logs                 記録
-follow               追跡
-open                 閲覧
+setup                準備
 hide                 秘匿
 reveal               暴露
-deploy               配備
-stop                 停止
-down                 削除
+check                検証
+build                試作
+release              制作
+run                  開始
 clean                掃除
-prune                破滅
 help                 助言
 ```
 
