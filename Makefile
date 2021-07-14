@@ -2,10 +2,11 @@
 
 TIMESTAMP := $(shell date +%Y%m%d%H%M%S)
 
-.PHONY: setup hide reveal check build run test doc clean help
+.PHONY: setup hide reveal check fmt lint build run test doc clean help
 
 setup: ## 準備
-	echo "TODO: Not Implemented Yet!"
+	rustup update
+	rustup component add clippy
 
 hide: ## 秘匿
 	git secret hide -v
@@ -16,20 +17,26 @@ reveal: ## 暴露
 check: ## 検証
 	cargo check
 
-build: ## 試作
+fmt: ## 整形
+	cargo fmt
+
+lint: ## 解析
+	cargo clippy
+
+build: check fmt lint ## 試作
 	cargo build
 
-release: check ## 制作
+release: check fmt lint ## 制作
 	cargo build --release
 
-run: ## 開始
+run: check fmt lint ## 開始
 	cargo run
 
-# test: ## 試験
-# 	echo "TODO: Not Implemented Yet!"
+test: ## 試験
+	cargo test
 
-# doc: ## 文書
-# 	echo "TODO: Not Implemented Yet!"
+doc: ## 文書
+	cargo doc --open
 
 clean: down ## 掃除
 	rm -rf log/*

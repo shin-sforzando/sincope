@@ -45,9 +45,13 @@ setup                準備
 hide                 秘匿
 reveal               暴露
 check                検証
+fmt                  整形
+lint                 解析
 build                試作
 release              制作
 run                  開始
+test                 試験
+doc                  文書
 clean                掃除
 help                 助言
 ```
