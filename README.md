@@ -1,7 +1,7 @@
 # sincope
 
 <!-- Badges -->
-[![sincope](https://github.com/shin-sforzando/sincope/actions/workflows/sincope.yml/badge.svg)](https://github.com/shin-sforzando/sincope/actions/workflows/sincope.yml)
+[![sincope](https://github.com/shin-sforzando/sincope/actions/workflows/push.yml/badge.svg)](https://github.com/shin-sforzando/sincope/actions/workflows/push.yml)
 [![Bump Version](https://github.com/shin-sforzando/sincope/actions/workflows/bump-version.yml/badge.svg)](https://github.com/shin-sforzando/sincope/actions/workflows/bump-version.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -18,11 +18,10 @@
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
   - [Setup](#setup)
-  - [Develop](#develop)
   - [Run](#run)
   - [Lint](#lint)
   - [Test](#test)
-  - [Deploy](#deploy)
+  - [Release](#release)
   - [Document](#document)
 - [Misc](#misc)
 - [Notes](#notes)
@@ -31,11 +30,7 @@
 
 ## Prerequisites
 
-- A (Version x.y.z or higher)
-  - B
-  - C
-- D
-  - E
+- `rustc` (Version 1.53.0 or higher)
 
 ## How to
 
@@ -59,43 +54,37 @@ help                 助言
 ### Setup
 
 ```shell
-(T. B. D.)
-```
-
-### Develop
-
-```shell
-(T. B. D.)
+make setup
 ```
 
 ### Run
 
 ```shell
-(T. B. D.)
+make run
 ```
 
 ### Lint
 
 ```shell
-(T. B. D.)
+make lint
 ```
 
 ### Test
 
 ```shell
-(T. B. D.)
+make test
 ```
 
-### Deploy
+### Release
 
 ```shell
-(T. B. D.)
+make release
 ```
 
 ### Document
 
 ```shell
-(T. B. D.)
+make doc
 ```
 
 ## Misc
